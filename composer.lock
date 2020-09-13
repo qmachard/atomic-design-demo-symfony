@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8d4106acbe4d4cf1453a3497a16eacb",
+    "content-hash": "96ed58d03710bb781476d36ddb663e2d",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7308,6 +7308,54 @@
             "time": "2020-08-30T16:15:20+00:00"
         },
         {
+            "name": "qmachard/atomic-design-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qmachard/atomic-design-bundle.git",
+                "reference": "ded197b4b324a4a9a23de8101412250c207dd9a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qmachard/atomic-design-bundle/zipball/ded197b4b324a4a9a23de8101412250c207dd9a0",
+                "reference": "ded197b4b324a4a9a23de8101412250c207dd9a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3",
+                "qmachard/atomic-design-bundle": "*",
+                "symfony/framework-bundle": "5.1.*",
+                "symfony/webpack-encore-bundle": "^1.7"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "QuentinMachard\\Bundle\\AtomicDesignBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Quentin Machard",
+                    "homepage": "http://www.quentinmachard.fr"
+                }
+            ],
+            "description": "Atomic Design System for Symfony.",
+            "keywords": [
+                "atomic",
+                "css",
+                "design",
+                "front-end",
+                "html",
+                "integration",
+                "system"
+            ],
+            "time": "2020-09-13T14:58:31+00:00"
+        },
+        {
             "name": "symfony/browser-kit",
             "version": "v5.1.5",
             "source": {
@@ -7843,11 +7891,66 @@
                 }
             ],
             "time": "2020-08-10T08:03:57+00:00"
+        },
+        {
+            "name": "symfony/webpack-encore-bundle",
+            "version": "v1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webpack-encore-bundle.git",
+                "reference": "5c0f659eceae87271cce54bbdfb05ed8ec9007bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/5c0f659eceae87271cce54bbdfb05ed8ec9007bd",
+                "reference": "5c0f659eceae87271cce54bbdfb05ed8ec9007bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/asset": "^3.4 || ^4.0 || ^5.0",
+                "symfony/config": "^3.4 || ^4.0 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.0 || ^5.0",
+                "symfony/service-contracts": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "symfony/framework-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/phpunit-bridge": "^4.3.5 || ^5.0",
+                "symfony/twig-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/web-link": "^3.4 || ^4.0 || ^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/webpack-encore",
+                    "url": "https://github.com/symfony/webpack-encore"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\WebpackEncoreBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Integration with your Symfony app & Webpack Encore!",
+            "time": "2020-01-31T15:31:59+00:00"
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "qmachard/atomic-design-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

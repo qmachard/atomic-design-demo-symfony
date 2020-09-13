@@ -40,6 +40,7 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "qmachard/atomic-design-bundle": "dev-master",
         "symfony/browser-kit": "^5.1",
         "symfony/css-selector": "^5.1",
         "symfony/debug-bundle": "^5.1",
@@ -93,5 +94,6 @@
             "allow-contrib": false,
             "require": "5.1.*"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
