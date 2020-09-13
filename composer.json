@@ -40,11 +40,12 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.3@dev",
         "qmachard/atomic-design-bundle": "dev-master",
         "symfony/browser-kit": "^5.1",
         "symfony/css-selector": "^5.1",
         "symfony/debug-bundle": "^5.1",
-        "symfony/maker-bundle": "^1.0",
+        "symfony/maker-bundle": "^1.0@dev",
         "symfony/phpunit-bridge": "^5.1",
         "symfony/var-dumper": "^5.1"
     },

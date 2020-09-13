@@ -1,0 +1,12 @@
+{% set attributes = [] %}
+{% set tag = props.tag|default('h1') %}
+
+{% set classes = ['heading'] %}
+
+{% if props.level is defined %}
+    {% set classes = classes|merge(['heading--level-' ~ props.level]) %}
+{% endif %}
+
+{% set attributes = attributes|merge(['class="' ~ classes|join(' ') ~ '"']) %}
+
+<{{ tag }} {{ attributes|join(' ')|raw }}>{{ props.title }}</{{ tag }}>

@@ -4,10 +4,12 @@
 @import "./commons/reset";
 @import "./commons/fonts";
 @import "./commons/theme";
+@import "./commons/layout";
 
 // Atoms
 @import "../../templates/components/atoms/button/button";
 @import "../../templates/components/atoms/image/image";
+@import "../../templates/components/atoms/heading/heading";
 
 // Molecules
 @import "../../templates/components/molecules/card/card";

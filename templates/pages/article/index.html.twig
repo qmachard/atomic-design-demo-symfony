@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <main>
+        {% include 'components/atoms/heading/heading.html.twig' with {
+            props: {
+                title: 'Articles',
+                level: 1,
+            }
+        } %}
+
+        {% for article in articles %}
+            {% include 'components/molecules/card/card.html.twig' with {
+                props: article,
+            } %}
+        {% endfor %}
+    </main>
+{% endblock %}

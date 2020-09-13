@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <main class="article">
+        {% include 'components/atoms/heading/heading.html.twig' with {
+            props: {
+                title: article.title,
+                level: 1,
+            }
+        } %}
+
+        {% include 'components/atoms/image/image.html.twig' with {
+            props: {
+                src: article.image,
+                alt: '',
+            },
+        } %}
+
+        <div class="article_except">{{ article.excerpt|raw }}</div>
+        <div class="article_body wysiwyg">{{ article.body|raw }}</div>
+
+        {% include 'components/organisms/carousel/carousel.html.twig' with {
+            props: {
+                items: articles,
+            },
+        } %}
+    </main>
+{% endblock %}

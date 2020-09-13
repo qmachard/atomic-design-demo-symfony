@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'components/atoms/heading/heading.html.twig' with {
+        props: {
+            title: 'Hello world!',
+            level: 1,
+        }
+    } %}
+
+    {% include 'components/organisms/carousel/carousel.html.twig' with {
+        props: {
+            items: items,
+        },
+    } %}
+
+    {% include 'components/atoms/button/button.html.twig' with {
+        props: {
+            label: 'Voir tous les articles'|trans,
+            link: path('article_index'),
+            color: 'secondary',
+        }
+    } %}
+{% endblock %}
