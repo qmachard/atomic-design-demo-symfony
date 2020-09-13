@@ -1,0 +1,9 @@
+<div class="carousel">
+    {% for item in props.items %}
+        <div class="carousel_item">
+            {% include 'components/molecules/card/card.html.twig' with {
+                props: item
+            } %}
+        </div>
+    {% endfor %}
+</div>
