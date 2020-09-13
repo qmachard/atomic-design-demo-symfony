@@ -1,0 +1,28 @@
+@import './variables';
+@import './mixins';
+
+:root {
+  --font-family: #{$font-helvetica}, sans-serif;
+
+  --color-default: #{$color-default};
+  --color-default-inverted: #{$color-default-inverted};
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{darken($color-primary, 5)};
+  --color-secondary: #{$color-secondary};
+  --color-secondary-hover: #{darken($color-secondary, 5)};
+  --color-light: #{$color-light};
+  --color-light-hover: #{darken($color-light, 5)};
+  --color-bg-card: #{$color-bg-card};
+  --color-bg-default: #{$color-bg-default};
+
+  --box-shadow-primary: 0 2px 4px #{transparentize($color-primary, .7)};
+  --box-shadow-secondary: 0 2px 4px #{transparentize($color-secondary, .7)};
+  --box-shadow-light: 0 2px 4px #{transparentize($color-light, .7)};
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.5;
+  background: var(--color-bg-default);
+}

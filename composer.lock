@@ -7313,12 +7313,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qmachard/atomic-design-bundle.git",
-                "reference": "ded197b4b324a4a9a23de8101412250c207dd9a0"
+                "reference": "a2a31ccac9984899d255e1afceb0cb7f7942fd30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qmachard/atomic-design-bundle/zipball/ded197b4b324a4a9a23de8101412250c207dd9a0",
-                "reference": "ded197b4b324a4a9a23de8101412250c207dd9a0",
+                "url": "https://api.github.com/repos/qmachard/atomic-design-bundle/zipball/a2a31ccac9984899d255e1afceb0cb7f7942fd30",
+                "reference": "a2a31ccac9984899d255e1afceb0cb7f7942fd30",
                 "shasum": ""
             },
             "require": {
@@ -7353,7 +7353,7 @@
                 "integration",
                 "system"
             ],
-            "time": "2020-09-13T14:58:31+00:00"
+            "time": "2020-09-13T15:16:06+00:00"
         },
         {
             "name": "symfony/browser-kit",

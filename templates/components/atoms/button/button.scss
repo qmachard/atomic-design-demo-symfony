@@ -1,0 +1,37 @@
+/* components/atoms/button/_button.scss */
+.button {
+  display: inline-block;
+  padding: 9px 27px;
+  border: none;
+  border-radius: 7px;
+  text-transform: uppercase;
+  transition: background .2s;
+  font-size: 12px;
+  background: var(--color-light);
+  box-shadow: var(--box-shadow-light);
+  color: var(--color-default);
+
+  &:hover {
+    background: var(--color-light-hover);
+  }
+
+  &--color-primary {
+    background: var(--color-primary);
+    color: var(--color-default-inverted);
+    box-shadow: var(--box-shadow-primary);
+
+    &:hover {
+      background: var(--color-primary-hover);
+    }
+  }
+
+  &--color-secondary {
+    background: var(--color-secondary);
+    color: var(--color-default-inverted);
+    box-shadow: var(--box-shadow-secondary);
+
+    &:hover {
+      background: var(--color-secondary-hover);
+    }
+  }
+}

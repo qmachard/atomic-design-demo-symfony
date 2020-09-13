@@ -1,0 +1,27 @@
+{% set tag = 'button' %}
+{% set attributes = [] %}
+{% set classes = ['button'] %}
+
+{% if props.color is defined %}
+    {% set classes = classes|merge(['button--color-' ~ props.color]) %}
+{% endif %}
+
+{% if props.disabled is defined and props.disabled %}
+    {% set classes = classes|merge(['button--disabled']) %}
+    {% set attributes = attributes|merge(['disabled="true"']) %}
+{% endif %}
+
+{% if props.title is defined %}
+    {% set attributes = attributes|merge(['title="' ~ props.title ~ '"']) %}
+{% endif %}
+
+{% set attributes = attributes|merge(['class="' ~ classes|join(' ') ~ '"']) %}
+
+{% if props.link is defined %}
+    {% set tag = 'a' %}
+    {% set attributes = attributes|merge(['href="' ~ props.link ~ '"']) %}
+{% endif %}
+
+<{{ tag }} {{ attributes|join(' ')|raw }}>
+    {{ props.label }}
+</{{ tag }}>

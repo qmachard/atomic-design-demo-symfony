@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+
+@font-face {
+  font-family: $font-helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Helvetica Neue'), local('HelveticaNeue-Medium'), url(../../fonts/HelveticaNeue-Medium.woff) format('woff');
+}
