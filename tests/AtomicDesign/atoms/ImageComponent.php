@@ -8,6 +8,11 @@ use QuentinMachard\Bundle\AtomicDesignBundle\Model\Component;
 
 class ImageComponent extends Component
 {
+    const DEFAULT_PROPS = [
+        'src' => 'http://placekitten.com/1024/768',
+        'alt' => 'Chatons mignons',
+    ];
+
     public function getName(): string
     {
         return 'Atoms|Image';
@@ -24,21 +29,16 @@ class ImageComponent extends Component
     public function default(): string
     {
         return $this->render('components/atoms/image/image.html.twig', [
-            'props' => [
-                'src' => 'http://placekitten.com/1024/768',
-                'alt' => 'Chatons mignons',
-            ],
+            'props' => self::DEFAULT_PROPS,
         ]);
     }
 
     public function rounded(): string
     {
         return $this->render('components/atoms/image/image.html.twig', [
-            'props' => [
-                'src' => 'http://placekitten.com/1024/768',
-                'alt' => 'Chatons mignons',
+            'props' => array_merge(self::DEFAULT_PROPS, [
                 'rounded' => true
-            ],
+            ]),
         ]);
     }
 }

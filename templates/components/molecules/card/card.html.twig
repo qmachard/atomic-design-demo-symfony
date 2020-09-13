@@ -1,0 +1,18 @@
+<article class="card">
+    {% include 'components/atoms/image/image.html.twig' with { props: props.image } %}
+
+    <div class="card_inner">
+        <h1 class="card_title"><a class="card_link" href="{{ props.link }}">{{ props.title }}</a></h1>
+        <p class="card_excerpt">{{ props.excerpt }}</p>
+
+        <div class="card_actions">
+            {% include 'components/atoms/button/button.html.twig' with {
+                props: {
+                    label: "Read more",
+                    link: props.link,
+                    color: 'primary'
+                }
+            } %}
+        </div>
+    </div>
+</article>

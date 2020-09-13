@@ -1,0 +1,65 @@
+.card {
+  display: block;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, .05);
+  transition: all .7s;
+  max-width: 340px;
+  min-height: 100%;
+  background: var(--color-bg-card);
+
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .5s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, .05);
+  }
+}
+
+.card_inner {
+  padding: 25px 17px;
+}
+
+.card_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  transition: color .2s;
+
+  .card:hover & {
+    color: var(--color-primary);
+  }
+}
+
+.card_link {
+  display: block;
+}
+
+.card_excerpt {
+  margin-bottom: 17px;
+}
+
+.card_actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  .button {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
