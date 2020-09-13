@@ -1,0 +1,7 @@
+{% set classes = ['image'] %}
+
+{% if props.rounded is defined and props.rounded %}
+    {% set classes = classes|merge(['image--rounded']) %}
+{% endif %}
+
+<img src="{{ props.src }}" alt="{{ props.alt }}" class="{{ classes|join(' ') }}">
