@@ -4,7 +4,6 @@
 @import "./commons/reset";
 @import "./commons/fonts";
 @import "./commons/theme";
-@import "./commons/layout";
 
 // Libs
 @import "~bootstrap-4-grid/scss/grid";
@@ -19,6 +18,7 @@
 
 // Organisms
 @import "../../templates/components/organisms/carousel/carousel";
+@import "../../templates/components/organisms/footer/footer";
 @import "../../templates/components/organisms/header/header";
 @import "../../templates/components/organisms/wysiwyg/wysiwyg";
 

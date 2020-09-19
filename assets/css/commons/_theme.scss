@@ -28,4 +28,11 @@ body {
   font-size: 14px;
   line-height: 1.5;
   background: var(--color-bg-default);
+  padding-top: $header-height--mobile + $spacer;
+  padding-bottom: $spacer;
+
+  @include desktop {
+    padding-top: $header-height + $spacer;
+    padding-bottom: $spacer;
+  }
 }
