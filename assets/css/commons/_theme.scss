@@ -12,6 +12,8 @@
   --color-secondary-hover: #{darken($color-secondary, 5)};
   --color-light: #{$color-light};
   --color-light-hover: #{darken($color-light, 5)};
+  --color-tertiary: #{$color-tertiary};
+  --color-tertiary-hover: #{darken($color-tertiary, 5)};
   --color-bg-card: #{$color-bg-card};
   --color-bg-default: #{$color-bg-default};
 
