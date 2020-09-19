@@ -80,7 +80,7 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "doctrine:migrations:migrate": "symfony-cmd",
-            "doctrine:fixtures:load": "symfony-cmd"
+            "doctrine:fixtures:load --append": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"
