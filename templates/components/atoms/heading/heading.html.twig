@@ -7,6 +7,10 @@
     {% set classes = classes|merge(['heading--level-' ~ props.level]) %}
 {% endif %}
 
+{% if props.align is defined %}
+    {% set classes = classes|merge(['heading--align-' ~ props.align]) %}
+{% endif %}
+
 {% set attributes = attributes|merge(['class="' ~ classes|join(' ') ~ '"']) %}
 
 <{{ tag }} {{ attributes|join(' ')|raw }}>{{ props.title }}</{{ tag }}>

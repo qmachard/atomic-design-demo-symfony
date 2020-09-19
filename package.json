@@ -16,6 +16,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "bootstrap-4-grid": "^3.4.0",
         "jquery": "^3.5.1",
         "slick-carousel": "^1.8.1"
     }

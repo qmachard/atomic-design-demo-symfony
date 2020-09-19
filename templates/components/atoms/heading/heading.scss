@@ -1,6 +1,10 @@
+@import '../../../../assets/css/commons/variables';
+@import '../../../../assets/css/commons/mixins';
+
 .heading {
   display: block;
-  font-weight: bold;
+  font-family: $font-abril;
+  color: var(--color-tertiary);
 
   &--level-1 {
     font-size: 30px;
@@ -10,5 +14,21 @@
   &--level-2 {
     font-size: 20px;
     margin-bottom: 10px;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  @include desktop {
+    &--level-1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    &--level-2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
   }
 }

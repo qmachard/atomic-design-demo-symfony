@@ -13,23 +13,42 @@
             props: {
                 title: article.title,
                 level: 1,
+                align: 'center',
             }
         } %}
 
-        {% include 'components/atoms/image/image.html.twig' with {
-            props: {
-                src: article.image,
-                alt: '',
-            },
-        } %}
+        <div class="article_image mt-4 mb-4">
+            {% include 'components/atoms/image/image.html.twig' with {
+                props: {
+                    src: article.image,
+                    alt: '',
+                }
+            } %}
+        </div>
 
-        <div class="article_except">{{ article.excerpt|raw }}</div>
-        <div class="article_body wysiwyg">{{ article.body|raw }}</div>
+        <div class="article_except mb-5">{{ article.excerpt|raw }}</div>
+        <div class="article_body mb-5">
+            {% include 'components/organisms/wysiwyg/wysiwyg.html.twig' with {
+                props: {
+                    body: article.body,
+                }
+            } %}
+        </div>
 
-        {% include 'components/organisms/carousel/carousel.html.twig' with {
-            props: {
-                items: articles,
-            },
-        } %}
+        <div class="article_related mt-5">
+            {% include 'components/atoms/heading/heading.html.twig' with {
+                props: {
+                    title: 'Related Articles'|trans,
+                    level: 2,
+                    align: 'center',
+                }
+            } %}
+
+            {% include 'components/organisms/carousel/carousel.html.twig' with {
+                props: {
+                    items: articles,
+                },
+            } %}
+        </div>
     </div>
 {% endblock %}

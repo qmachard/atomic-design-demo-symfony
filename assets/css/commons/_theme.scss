@@ -2,7 +2,8 @@
 @import './mixins';
 
 :root {
-  --font-family: #{$font-helvetica}, sans-serif;
+  --font-family: #{$font-helvetica};
+  --font-family-title: #{$font-abril};
 
   --color-default: #{$color-default};
   --color-default-inverted: #{$color-default-inverted};

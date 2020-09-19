@@ -13,7 +13,12 @@
         {% endif %}
 
         <a class="header_logo" href="{{ path('homepage') }}">
-            <img src="{{ asset('build/logo.svg') }}" alt="The Web Telegraph">
+            {% include 'components/atoms/image/image.html.twig' with {
+                props: {
+                    src: asset('build/logo.svg'),
+                    alt: 'The Web Telegraph',
+                }
+            } %}
         </a>
     </div>
 </header>
