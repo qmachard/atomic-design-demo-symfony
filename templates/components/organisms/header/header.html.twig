@@ -1,18 +1,18 @@
 {% set classes = ['header'] %}
 
-{% if props.back is defined %}
+{% if props.back is defined and props.back is not null %}
     {% set classes = classes|merge(['header--with-back']) %}
 {% endif %}
 
 <header class="{{ classes|join(' ')|raw }}">
     <div class="container header_inner">
-        {% if props.back is defined %}
+        {% if props.back is defined and props.back is not null %}
             <a class="header_back" href="{{ props.back.href }}" title="{{ props.back.title|default('') }}">
                 {% include 'components/atoms/icon/icon.html.twig' with { props: { icon: 'arrow' }} %}
             </a>
         {% endif %}
 
-        <a class="header_logo" href="{{ path('app_homepage_index') }}">
+        <a class="header_logo" href="{{ path('homepage') }}">
             <img src="{{ asset('build/logo.svg') }}" alt="The Web Telegraph">
         </a>
     </div>

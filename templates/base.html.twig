@@ -8,9 +8,15 @@
         {% endblock %}
     </head>
     <body>
-        <div class="container">
+        {% include 'components/organisms/header/header.html.twig' with {
+            props: {
+                back: back is defined ? back : null
+            }
+        } %}
+
+        <main class="main container">
             {% block body %}{% endblock %}
-        </div>
+        </main>
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}

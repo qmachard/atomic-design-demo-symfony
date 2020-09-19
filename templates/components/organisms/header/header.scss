@@ -1,9 +1,6 @@
 @import '../../../../assets/css/commons/variables';
 @import '../../../../assets/css/commons/mixins';
 
-$header-height: 68px;
-$header-height--mobile: 50px;
-
 .header {
   position: fixed;
   top: 0;
@@ -57,7 +54,8 @@ $header-height--mobile: 50px;
   width: $header-height--mobile;
   transition: background .2s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--color-tertiary-hover)
   }
 

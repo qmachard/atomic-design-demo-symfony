@@ -1,9 +1,14 @@
+{% set back = {
+    href: path('article_index'),
+    title: 'Tous les articles'|trans
+} %}
+
 {% extends 'base.html.twig' %}
 
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block body %}
-    <main class="article">
+    <div class="article">
         {% include 'components/atoms/heading/heading.html.twig' with {
             props: {
                 title: article.title,
@@ -26,5 +31,5 @@
                 items: articles,
             },
         } %}
-    </main>
+    </div>
 {% endblock %}
