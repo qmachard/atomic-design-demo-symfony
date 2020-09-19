@@ -14,9 +14,14 @@
         }
     } %}
 
-    {% for article in articles %}
-        {% include 'components/molecules/card/card.html.twig' with {
-            props: article,
-        } %}
-    {% endfor %}
+    <div class="row">
+        {% for article in articles %}
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                {% include 'components/molecules/card/card.html.twig' with {
+                    props: article,
+                } %}
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}
