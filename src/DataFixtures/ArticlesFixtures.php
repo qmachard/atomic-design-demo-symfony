@@ -53,9 +53,7 @@ class ArticlesFixtures extends Fixture
             $article = new Article();
             $article->setTitle('Lorem ipsum');
             $article->setBody($body);
-            $article->setExcerpt('Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-                quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo.');
+            $article->setExcerpt('Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.');
             $article->setImage('https://images.unsplash.com/photo-1519200566043-99f14d08fcf9?auto=format&fit=crop&w=600&q=80');
 
             $manager->persist($article);
