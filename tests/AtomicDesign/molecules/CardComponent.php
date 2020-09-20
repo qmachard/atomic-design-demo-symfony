@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Tests\AtomicDesign\molecules;
 
-use App\Tests\AtomicDesign\atoms\ImageComponent;
 use QuentinMachard\Bundle\AtomicDesignBundle\Model\Component;
 
 class CardComponent extends Component
@@ -25,7 +24,10 @@ class CardComponent extends Component
     {
         return $this->render('components/molecules/card/card.html.twig', [
             'props' => [
-                'image' => ImageComponent::DEFAULT_PROPS,
+                'image' => [
+                    'src' => 'https://images.unsplash.com/photo-1475331728068-c4ca48823b97?auto=format&fit=crop&w=600&q=80',
+                    'alt' => '',
+                ],
                 'title' => 'Ma carte',
                 'link' => '#',
                 'excerpt' => 'Ceci n\'est pas une carte à jouer !'

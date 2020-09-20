@@ -18,12 +18,12 @@
         } %}
 
         <div class="article_image mt-4 mb-4">
-            {% include 'components/atoms/image/image.html.twig' with {
-                props: {
-                    src: article.image,
-                    alt: '',
-                }
-            } %}
+{#            {% include 'components/atoms/image/image.html.twig' with {#}
+{#                props: {#}
+{#                    src: article.image,#}
+{#                    alt: '',#}
+{#                }#}
+{#            } %}#}
         </div>
 
         <div class="article_except mb-5">{{ article.excerpt|raw }}</div>
