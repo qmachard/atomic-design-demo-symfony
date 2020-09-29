@@ -52,15 +52,13 @@ class ArticleController extends AbstractController
      */
     public function view(Article $article): Response
     {
-        $articles = $this->getDoctrine()
-            ->getRepository(Article::class)
-            ->findBy([], ['title' => 'asc'], 5);
+        //$articles = $this->getDoctrine()
+        //    ->getRepository(Article::class)
+        //    ->findRelated($article);
 
         return $this->render('pages/article/view.html.twig', [
             'article' => $article,
-            'articles' => array_map(function (Article $article) {
-                return $this->articleNormalizer->normalize($article, ArticleNormalizer::FORMAT_CARD);
-            }, $articles),
+            // 'articles' => []
         ]);
     }
 }

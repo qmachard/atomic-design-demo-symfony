@@ -22,7 +22,9 @@ class CarouselComponent extends Component
 
     public function default(): string
     {
-        return $this->render('components/organisms/carousel/carousel.html.twig', [
+        $parts = [];
+
+        $parts[] = $this->render('components/organisms/carousel/carousel.html.twig', [
             'props' => [
                 'items' => [
                     [
@@ -64,5 +66,25 @@ class CarouselComponent extends Component
                 ]
             ],
         ]);
+
+        $parts[] = '
+<pre style="margin: 30px 15px 15px 15px; background: #333; color: #FFF; padding: 15px; border-radius: 3px;">
+// ArticleController.php
+$articles = array_map(function (Article $article) {
+    return $this->articleNormalizer->normalize($article, ArticleNormalizer::FORMAT_CARD);
+}, $articles);
+</pre>';
+
+        $parts[] = '
+<pre style="margin: 15px; background: #333; color: #FFF; padding: 15px; border-radius: 3px;">
+{# homepage.html.twig #}
+{% include \'components/organisms/carousel/carousel.html.twig\' with {
+    props: {
+        items: articles,
+    },
+} %}
+</pre>';
+
+        return join('', $parts);
     }
 }
