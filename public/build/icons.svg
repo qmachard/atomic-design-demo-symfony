@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    <symbol id="arrow" viewBox="0 0 18 12">
-        <g transform="translate(-230.000000, -29.000000)" fill="currentColor" fill-rule="nonzero">
-            <polygon id="Path" points="230 35 236.75 29 236.75 33.5 248 33.5 248 36.5 236.75 36.5 236.75 41" />
-        </g>
-    </symbol>
-</svg>
