@@ -23,7 +23,7 @@ class HomepageController extends AbstractController
     }
 
     /**
-     * @Route(path="/")
+     * @Route(path="/", name="homepage")
      *
      * @return Response
      */

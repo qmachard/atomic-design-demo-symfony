@@ -2,7 +2,8 @@
 @import './mixins';
 
 :root {
-  --font-family: #{$font-helvetica}, sans-serif;
+  --font-family: #{$font-helvetica};
+  --font-family-title: #{$font-abril};
 
   --color-default: #{$color-default};
   --color-default-inverted: #{$color-default-inverted};
@@ -12,6 +13,8 @@
   --color-secondary-hover: #{darken($color-secondary, 5)};
   --color-light: #{$color-light};
   --color-light-hover: #{darken($color-light, 5)};
+  --color-tertiary: #{$color-tertiary};
+  --color-tertiary-hover: #{darken($color-tertiary, 5)};
   --color-bg-card: #{$color-bg-card};
   --color-bg-default: #{$color-bg-default};
 
@@ -25,4 +28,11 @@ body {
   font-size: 14px;
   line-height: 1.5;
   background: var(--color-bg-default);
+  padding-top: $header-height--mobile + $spacer;
+  padding-bottom: $spacer;
+
+  @include desktop {
+    padding-top: $header-height + $spacer;
+    padding-bottom: $spacer;
+  }
 }

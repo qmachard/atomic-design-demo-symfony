@@ -1508,6 +1508,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap-4-grid@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-4-grid/-/bootstrap-4-grid-3.4.0.tgz#62769a992484b9338a0e7219842c90aa70e62f54"
+  integrity sha512-0bemukOEqWgO3Fd1SPFd2yUTEuqLBsPOfX7haNTw4iAbZAqW8doSbqu7VBo1sKBP73mAJMLquIgGCRVBPTDZ8A==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"

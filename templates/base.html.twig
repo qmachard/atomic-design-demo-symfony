@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
     <body>
-        <div class="container">
+        {% include 'components/organisms/header/header.html.twig' with {
+            props: {
+                back: back is defined ? back : null
+            }
+        } %}
+
+        <main class="container">
             {% block body %}{% endblock %}
-        </div>
+        </main>
+
+        {% include 'components/organisms/footer/footer.html.twig' %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}

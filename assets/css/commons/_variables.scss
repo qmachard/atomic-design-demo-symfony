@@ -1,12 +1,18 @@
-$font-helvetica: 'Helvetica Neue';
+$font-helvetica: 'Helvetica Neue', sans-serif;
+$font-abril: 'Abril Fatface', cursive;
 
 $color-default: #000000;
 $color-default-inverted: #FFFFFF;
 $color-primary: #F26549;
 $color-secondary: #6c757d;
+$color-tertiary: #163240;
 $color-light: #f8f9fa;
 
 $color-bg-default: #FFFAEF;
 $color-bg-card: #FFFFFF;
 
 $wrapper-with: 1024px;
+$spacer: 20px;
+
+$header-height: 68px;
+$header-height--mobile: 50px;

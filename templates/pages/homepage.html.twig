@@ -3,8 +3,9 @@
 {% block body %}
     {% include 'components/atoms/heading/heading.html.twig' with {
         props: {
-            title: 'Hello world!',
+            title: 'Latest Articles',
             level: 1,
+            align: 'center',
         }
     } %}
 
@@ -14,11 +15,13 @@
         },
     } %}
 
-    {% include 'components/atoms/button/button.html.twig' with {
-        props: {
-            label: 'Voir tous les articles'|trans,
-            link: path('article_index'),
-            color: 'secondary',
-        }
-    } %}
+    <div class="mt-5 text-center">
+        {% include 'components/atoms/button/button.html.twig' with {
+            props: {
+                label: 'See all articles'|trans,
+                link: path('article_index'),
+                color: 'secondary',
+            }
+        } %}
+    </div>
 {% endblock %}

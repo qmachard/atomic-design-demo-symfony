@@ -9,6 +9,8 @@ Demo of Atomic Design pattern applied to Symfony with AtomicDesignBundle
 * Symfony CLI ≥ 4.18
 * PHP ≥ 7.3
 * Composer ≥ 1.10
+* Node ≥ 12.5
+* Yarn ≥ 1.21
 
 ### Installation
 
@@ -23,6 +25,13 @@ $ cd atomic-design-demo-symfony/
 
 ```
 $ composer install
+```
+
+* Build assets
+
+```
+$ yarn install
+$ yarn build
 ```
 
 * Start the server with Symfony CLI

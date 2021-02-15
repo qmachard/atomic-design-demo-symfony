@@ -1,18 +1,27 @@
+{% set back = {
+    href: path('homepage'),
+    title: 'Accueil'|trans
+} %}
+
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <main>
-        {% include 'components/atoms/heading/heading.html.twig' with {
-            props: {
-                title: 'Articles',
-                level: 1,
-            }
-        } %}
+    {% include 'components/atoms/heading/heading.html.twig' with {
+        props: {
+            title: 'Articles',
+            level: 1,
+            align: 'center',
+        }
+    } %}
 
+    <div class="row">
         {% for article in articles %}
-            {% include 'components/molecules/card/card.html.twig' with {
-                props: article,
-            } %}
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                {% include 'components/molecules/card/card.html.twig' with {
+                    props: article,
+                } %}
+            </div>
         {% endfor %}
-    </main>
+    </div>
+
 {% endblock %}
