@@ -29,6 +29,9 @@
     "doctrine/dbal": {
         "version": "2.10.4"
     },
+    "doctrine/deprecations": {
+        "version": "v0.2.0"
+    },
     "doctrine/doctrine-bundle": {
         "version": "2.0",
         "recipe": {
@@ -95,6 +98,18 @@
     },
     "egulias/email-validator": {
         "version": "2.1.20"
+    },
+    "friendsofphp/proxy-manager-lts": {
+        "version": "1.x-dev"
+    },
+    "laminas/laminas-code": {
+        "version": "4.1.x-dev"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.4.x-dev"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.2.x-dev"
     },
     "monolog/monolog": {
         "version": "2.1.1"
