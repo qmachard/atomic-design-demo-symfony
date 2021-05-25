@@ -385,6 +385,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.18.1"
     },
+    "symfony/polyfill-php81": {
+        "version": "1.23-dev"
+    },
     "symfony/process": {
         "version": "v5.1.5"
     },
